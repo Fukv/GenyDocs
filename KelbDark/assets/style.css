@@ -141,15 +141,21 @@ nav.nav-open ~ content {
 	padding: 50px 20px 150px 20px;
 }
 
+#credits {
+	text-align: center;
+	color: var(--bkgMain);
+	bottom: 20px;
+}
+
 /* Responsive */
 
-@media (width < 800px) {
+@media screen and (width < 800px) {
 	#contentInner {
 		min-width: calc(100vw - 40px);
 	}
 }
 
-@media (width < 600px) {
+@media screen and (width < 600px) {
 	.nav-open {
 		width: calc(100vw - 66px);
 	}
