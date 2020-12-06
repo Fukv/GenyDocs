@@ -1,8 +1,7 @@
 site_name: Geny Docs
 site_author: insyco_nesh
 site_description: "La documentation de Geny"
-theme: material
 
-# theme:
-#     name: null
-#     custom_dir: 'KelbDark/'
+theme:
+    name: null
+    custom_dir: 'KelbDark/'
