@@ -157,7 +157,7 @@ nav.nav-open ~ content {
 		left: calc(100vw - 66px);
 	}
 	body {
-		overflow: hidden !important;
+		overflow-x: hidden;
 	}
 }
 
