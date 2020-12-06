@@ -45,6 +45,11 @@ nav {
 	position: fixed;
 	white-space: nowrap;
 
+	padding-bottom: 61px;
+	box-sizing: border-box;
+	overflow-y: auto;
+	overflow-x: hidden;
+
 	background: var(--bkgShade);
 }
 
@@ -141,15 +146,23 @@ nav.nav-open ~ content {
 	padding: 50px 20px 150px 20px;
 }
 
+#credits {
+	text-align: center;
+	color: var(--bkgMain);
+	bottom: 20px;
+	width: 300px;
+	position: absolute;
+}
+
 /* Responsive */
 
-@media (width < 800px) {
+@media screen and (max-width: 800px) {
 	#contentInner {
 		min-width: calc(100vw - 40px);
 	}
 }
 
-@media (width < 600px) {
+@media screen and (max-width: 600px) {
 	.nav-open {
 		width: calc(100vw - 66px);
 	}
@@ -157,7 +170,7 @@ nav.nav-open ~ content {
 		left: calc(100vw - 66px);
 	}
 	body {
-		overflow-x: hidden;
+		overflow-x: hidden !important;
 	}
 }
 
