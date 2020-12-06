@@ -45,6 +45,11 @@ nav {
 	position: fixed;
 	white-space: nowrap;
 
+	padding-bottom: 61px;
+	box-sizing: border-box;
+	overflow-y: auto;
+	overflow-x: hidden;
+
 	background: var(--bkgShade);
 }
 
@@ -145,17 +150,19 @@ nav.nav-open ~ content {
 	text-align: center;
 	color: var(--bkgMain);
 	bottom: 20px;
+	width: 300px;
+	position: absolute;
 }
 
 /* Responsive */
 
-@media screen and (width < 800px) {
+@media screen and (max-width: 800px) {
 	#contentInner {
 		min-width: calc(100vw - 40px);
 	}
 }
 
-@media screen and (width < 600px) {
+@media screen and (max-width: 600px) {
 	.nav-open {
 		width: calc(100vw - 66px);
 	}
