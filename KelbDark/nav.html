@@ -4,6 +4,8 @@
         <a href="{{ config.site_url | url }}">{{ config.site_name }}</a>
     </div>
 
+    {{%nav%}}
+
     {% if nav|length>1 %}
         {% for nav_itemLvl1 in nav %}
             {% if nav_itemLvl1.children %}
