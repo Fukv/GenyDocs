@@ -13,19 +13,19 @@
                     <span class="nav-level1-title">{{ nav_itemLvl1.title }}</span>
                     <div class="nav-level2-category">
                         {% for nav_itemLvl2 in nav_itemLvl1.children %}
-                            {{ nav_itemLvl2 }}
-                            {{ nav_itemLvl2.url }}
-                            {{ config.site_url + nav_itemLvl2.url }}
-                            <a class="nav-level2-title {% if nav_itemLvl2.active %}nav-active{% endif %}" href="{{ config.site_url + nav_itemLvl2.url }}">{{ nav_itemLvl2.title }}</a>
+                            <!-- {{ nav_itemLvl2 }}
+                            {{ nav_itemLvl2.url|url }}
+                            {{ config.site_url + nav_itemLvl2.url }} -->
+                            <a class="nav-level2-title {% if nav_itemLvl2.active %}nav-active{% endif %}" href="{{ nav_itemLvl2.url|url }}">{{ nav_itemLvl2.title }}</a>
                         {% endfor %}
                     </div>
                 </div>
             {% else %}
                 <div class="nav-level1-page">
-                    {{ nav_itemLvl1 }}
-                    {{ nav_itemLvl1.url }}
-                    {{ config.site_url + nav_itemLvl1.url }}
-                    <a class="nav-level2-title {% if nav_itemLvl1.active %}nav-active{% endif %}" href="{{ config.site_url + nav_itemLvl1.url }}">{{ nav_itemLvl1.title }}</a>
+                    <!-- {{ nav_itemLvl1 }}
+                    {{ nav_itemLvl1.url|url }}
+                    {{ config.site_url + nav_itemLvl1.url }} -->
+                    <a class="nav-level2-title {% if nav_itemLvl1.active %}nav-active{% endif %}" href="{{ nav_itemLvl1.url|url }}">{{ nav_itemLvl1.title }}</a>
                 </div>
             {% endif %}
         {% endfor %}
