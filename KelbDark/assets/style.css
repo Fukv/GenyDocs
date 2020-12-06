@@ -149,20 +149,32 @@ nav.nav-open ~ content {
 #credits {
 	text-align: center;
 	color: var(--bkgMain);
-	bottom: 20px;
 	width: 300px;
-	position: absolute;
+	margin-top: 50px;
+	margin-bottom: 30px;
 }
 
 /* Responsive */
 
-@media screen and (max-width: 800px) {
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 800px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 800px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 800px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 800px),
+only screen and (                min-resolution: 192dpi) and (min-width: 800px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 800px) {
 	#contentInner {
 		min-width: calc(100vw - 40px);
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 600px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 600px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 600px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 600px),
+only screen and (                min-resolution: 192dpi) and (min-width: 600px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 600px) {
 	.nav-open {
 		width: calc(100vw - 66px);
 	}
