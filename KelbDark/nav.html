@@ -1,0 +1,25 @@
+<nav class="nav-open">
+
+    <div id="nav-siteName">
+        <a href="{{ config.site_url | url }}">{{ config.site_name }}</a>
+    </div>
+
+    {% if nav|length>1 %}
+        {% for nav_itemLvl1 in nav %}
+            {% if nav_itemLvl1.children %}
+                <div class="nav-level1-category">
+                    <span class="nav-level1-title">{{ nav_itemLvl1.title }}</span>
+                    <div class="nav-level2-category">
+                        {% for nav_itemLvl2 in nav_itemLvl1.children %}
+                            <a class="nav-level2-title {% if nav_itemLvl2.active %}nav-active{% endif %}" href="{{ nav_itemLvl2.abs_url }}">{{ nav_itemLvl2.title }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% else %}
+                <div class="nav-level1-page">
+                    <a class="nav-level2-title {% if nav_itemLvl1.active %}nav-active{% endif %}" href="{{ nav_itemLvl1.abs_url }}">{{ nav_itemLvl1.title }}</a>
+                </div>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+</nav>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>{% if page and page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+        {% if config.site_description %}<meta name="description" content="{{ config.site_description }}">{% endif %}
+        <meta name="generator" content="mkdocs-{{ mkdocs_version }}">
+        {% if config.site_author %}<meta name="author" content="{{ config.site_author }}">{% endif %}
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;700&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+        <link rel="shortcut icon" href="{{ base_url }}/assets/favicon.ico">
+
+        {%- block styles %}
+            <link href="{{ base_url }}/assets/style.css" rel="stylesheet">
+            {%- for path in extra_css %}
+                <link href="{{ path }}" rel="stylesheet">
+            {%- endfor %}
+        {%- endblock %}
+
+        {%- block scripts %}
+            <script src="{{ base_url }}/assets/script.js">
+            {%- for path in extra_js %}
+                <script src="{{ path }}/assets/script.js">
+            {%- endfor %}
+        {%- endblock %}
+    </head>
+    <body>
+
+        {%- block site_nav %}
+            {% include "nav.html" %}
+        {%- endblock %}
+
+        {%- block site_content %}
+            {% include "content.html" %}
+        {%- endblock %}
+
+    </body>
+</html>
