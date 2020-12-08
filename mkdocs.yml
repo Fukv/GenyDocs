@@ -2,6 +2,10 @@ site_name: Geny Docs
 site_author: insyco_nesh
 site_description: "La documentation de Geny"
 
+markdown_extensions:
+  - abbr
+  - pymdownx.keys
+
 theme:
     name: null
     custom_dir: 'KelbDark/'

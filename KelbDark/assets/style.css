@@ -188,43 +188,51 @@ only screen and (                max-resolution: 2dppx)  and (max-width: 600px) 
 
 /* Markdown Style */
 
-h1, h2 {
+.md-content h1, .md-content h2 {
 	margin-bottom: 30px;
 }
 
-h2, h3, h4, h5 {
+.md-content h2, .md-content h3, .md-content h4, .md-content h5 {
 	margin-top: 30px;
 }
 
-h1 {
+.md-content h1 {
 	font-size: 2em;
 }
 
-h2 {
+.md-content h2 {
 	font-size: 1.75em;
 }
 
-h3 {
+.md-content h3 {
 	font-size: 1.50em;
 }
 
-h4 {
+.md-content h4 {
 	font-size: 1.25em;
 }
 
-p {
+.md-content h5 {
+	font-size: 1em;
+}
+
+.md-content h6 {
+	font-size: 0.75em;
+}
+
+.md-content p {
 	font-weight: 300;
 	line-height: 1.4em;
 }
 
-hr {
+.md-content hr {
 	margin: 2em auto;
 	height: 5px;
 	background: var(--bkgShade);
 	border: none;
 }
 
-pre {
+.md-content pre {
 	padding: 1em;
 	background: var(--bkgShade);
 	border-radius: 3px;
@@ -232,17 +240,42 @@ pre {
 	white-space: pre;
 }
 
-code {
+.md-content code {
 	padding: 0.2em 0.5em;
 	font-size: 0.85em;
 	background: var(--bkgShade);
 	font-family: Consolas;
 }
 
-li {
+.md-content li {
 	line-height: 1.5em;
 }
 
-img {
+.md-content img {
 	max-width: 100%;
+}
+
+.md-content abbr {
+	text-decoration: none;
+	border-bottom: .05rem dotted var(--fontBetween);
+	cursor: help;
+}
+
+.md-content strong {
+	font-weight: bold;
+}
+
+.md-content kbd ~ span {
+	margin: 0 3px;
+}
+
+.md-content kbd {
+	display: inline-block;
+	padding: 0 .8em;
+	color: var(--fontMain);
+	font-size: 1em;
+	vertical-align: text-top;
+	background-color: var(--bkgShade);
+	border-radius: .13rem;
+	box-shadow: 0 2px 0 var(--fontMain);
 }
