@@ -18,6 +18,8 @@
 
 	--shade: #348E3F;
 	--shadeShaded: #26632d;
+
+	--redError: #551010;
 }
 
 body {
@@ -49,6 +51,7 @@ nav {
 	box-sizing: border-box;
 	overflow-y: auto;
 	overflow-x: hidden;
+	scrollbar-width: thin;
 
 	background: var(--bkgShade);
 }
@@ -159,8 +162,6 @@ nav.nav-open ~ content {
 @media
 only screen and (-webkit-max-device-pixel-ratio: 2)      and (max-width: 800px),
 only screen and (   max--moz-device-pixel-ratio: 2)      and (max-width: 800px),
-only screen and (     -o-max-device-pixel-ratio: 2/1)    and (max-width: 800px),
-only screen and (        max-device-pixel-ratio: 2)      and (max-width: 800px),
 only screen and (                max-resolution: 192dpi) and (max-width: 800px),
 only screen and (                max-resolution: 2dppx)  and (max-width: 800px) {
 	#contentInner {
@@ -171,8 +172,6 @@ only screen and (                max-resolution: 2dppx)  and (max-width: 800px) 
 @media
 only screen and (-webkit-max-device-pixel-ratio: 2)      and (max-width: 600px),
 only screen and (   max--moz-device-pixel-ratio: 2)      and (max-width: 600px),
-only screen and (     -o-max-device-pixel-ratio: 2/1)    and (max-width: 600px),
-only screen and (        max-device-pixel-ratio: 2)      and (max-width: 600px),
 only screen and (                max-resolution: 192dpi) and (max-width: 600px),
 only screen and (                max-resolution: 2dppx)  and (max-width: 600px) {
 	.nav-open {
@@ -222,7 +221,8 @@ only screen and (                max-resolution: 2dppx)  and (max-width: 600px) 
 
 .md-content p {
 	font-weight: 300;
-	line-height: 1.4em;
+	line-height: 1.5em;
+	margin: 25px 0;
 }
 
 .md-content hr {
@@ -232,12 +232,11 @@ only screen and (                max-resolution: 2dppx)  and (max-width: 600px) 
 	border: none;
 }
 
-.md-content pre {
+.md-content pre, .md-content .admonition {
 	padding: 1em;
 	background: var(--bkgShade);
 	border-radius: 3px;
 	overflow: auto;
-	white-space: pre;
 }
 
 .md-content code {
@@ -249,6 +248,7 @@ only screen and (                max-resolution: 2dppx)  and (max-width: 600px) 
 
 .md-content li {
 	line-height: 1.5em;
+	margin: 10px 0;
 }
 
 .md-content img {
@@ -278,4 +278,49 @@ only screen and (                max-resolution: 2dppx)  and (max-width: 600px) 
 	background-color: var(--bkgShade);
 	border-radius: .13rem;
 	box-shadow: 0 2px 0 var(--fontMain);
+}
+
+.md-content .admonition {
+	margin: 20px 0;
+}
+
+.md-content .admonition .admonition-title {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.md-content .admonition.error {
+	background: var(--redError);
+}
+
+.md-content table {
+	border-collapse: collapse;
+	width: 100%;
+	border-radius: 0.5rem;
+}
+
+.md-content thead {
+	background: var(--bkgShade);
+}
+
+.md-content td, .md-content th {
+	padding: 10px;
+	border: var(--bkgShade) 1px solid;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.md-content th {
+	font-weight: 800;
+}
+
+.md-content th:not([align]), .md-content td:not([align]) {
+	text-align: left;
+}
+
+.md-content blockquote {
+	border-left: var(--bkgShade) 5px solid;
+	margin: 20px 5px;
+	padding-left: 20px;
 }

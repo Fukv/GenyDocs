@@ -5,7 +5,17 @@ site_description: "La documentation de Geny"
 markdown_extensions:
   - abbr
   - pymdownx.keys
+  - admonition
 
 theme:
     name: null
     custom_dir: 'KelbDark/'
+
+# nav:
+#     - 'Home': 'index.md'
+#     - 'User Guidde':
+#         - 'Writing your docs': 'writing-your-docs.md'
+#         - 'Styling your docs': 'styling-your-docs.md'
+#     - About:
+#         - 'License': 'license.md'
+#         - 'Release Notes': 'release-notes.md'

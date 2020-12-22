@@ -20,7 +20,7 @@ This is a **required setting**, and should be a string that is used as the main
 title for the project documentation. For example:
 
 ```yaml
-site_name: Marshmallow Generator
+site_name: Marshmallow Generatorsssssssssssssssssssssssssssssssss ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
 ```
 
 When rendering the theme this setting will be passed as the `site_name` context
@@ -95,11 +95,11 @@ edit_uri: root/path/docs/
     For example, for a GitHub- or GitLab-hosted repository, the `edit_uri`
     would be automatically set as `edit/master/docs/` (Note the `edit` path
     and `master` branch).
-
+    
     For a Bitbucket-hosted repository, the equivalent `edit_uri` would be
     automatically set as `src/default/docs/` (note the `src` path and `default`
     branch).
-
+    
     To use a different URI than the default (for example a different branch),
     simply set the `edit_uri` to your desired string. If you do not want any
     "edit URL link" displayed on your pages, then set `edit_uri` to an empty
@@ -244,31 +244,31 @@ If a set of key/value pairs, the following nested keys can be defined:
 !!! block ""
 
     #### name:
-
+    
     The string name of a known installed theme. For a list of available themes
     visit [styling your docs].
-
+    
     #### custom_dir:
-
+    
     A directory containing a custom theme. This can either be a relative
     directory, in which case it is resolved relative to the directory containing
     your configuration file or it can be an absolute directory path from the
     root of your local file system.
-
+    
     See [styling your docs][theme_dir] for details if you would like to tweak an
     existing theme.
-
+    
     See [custom themes] if you would like to build your own theme from the
     ground up.
-
+    
     #### static_templates:
-
+    
     A list of templates to render as static pages. The templates must be located
     in either the theme's template directory or in the `custom_dir` defined in
     the theme configuration.
-
+    
     #### (theme specific keywords)
-
+    
     Any additional keywords supported by the theme can also be defined. See the
     documentation for the theme you are using for details.
 
@@ -299,7 +299,7 @@ the root of your local file system.
     you might add the following line to your `.gitignore` file:
 
         site/
-
+    
     If you're using another source code control tool, you'll want to check its
     documentation on how to ignore specific directories.
 
