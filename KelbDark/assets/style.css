@@ -138,7 +138,6 @@ nav span, nav a {
 content {
 	position: absolute;
 	top: 0;
-	bottom: 0;
 	left: 0;
 	right: 0;
 	transition: 200ms;
@@ -196,7 +195,7 @@ only screen and (                max-resolution: 2dppx)  and (max-width: 600px) 
 		left: calc(100vw - 58px);
 	}
 	body {
-		overflow-x: hidden !important;
+		overflow: hidden !important;
 	}
 }
 
