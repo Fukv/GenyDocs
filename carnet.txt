@@ -1,0 +1,14 @@
+How does Geny work
+	- A Command-based system
+	- A brief introduction to Packages
+	- Geny initialization
+Customization
+	- Packages
+	
+	- Theming
+	- Translation
+	- Deploying
+API
+	- How does genyAPI work
+	-
+Style Guide

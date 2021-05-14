@@ -61,11 +61,17 @@ Un lancé de dés ne donne pas seulement l'issue de l'action en cours, mais auss
 
 ### Actions
 
-Un JdR est un ensemble d'action et de situations, les unes déclenchés par les joueurs, les autres par le MJ
+Un JdR est un ensemble d'action et de situations, les unes déclenchés par les joueurs, les autres définies par le MJ
 
 Pour que tout se déroule bien, certaines règles doivent être respectés :
 
 - Une action 
 
 ### Compétences
+
+## Gestion PVs
+
+Les PVs sont les Points de Vie, chaque personnage (joueur ou non) en ont un certain nombre, sur une base de 10 (plus ou moins 10 donc)
+
+La jauge de PV a un maximum, qui peut être, durant les aventures, revue a la hausse ou a la baisse, imaginons par exemple une malédiction qui enlève 2 PV de façon permanente à un joueur, les PV ne peuvent désormais plus excéder le maximum - 2 
 

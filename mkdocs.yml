@@ -4,7 +4,7 @@ site_description: "La documentation de Geny"
 
 markdown_extensions:
   - abbr
-  - pymdownx.keys
+#  - pymdownx.keys
   - admonition
 
 theme:

@@ -69,7 +69,7 @@ nav a, nav span {
 
 
 #nav-siteName {
-	padding: 20px 15px;
+	padding: 20px 20px;
 	font-size: 25px;
 }
 
@@ -80,7 +80,7 @@ nav a, nav span {
 
 .nav-level1-category {
 	margin-top: 40px;
-	margin-left: 15px;
+	margin-left: 20px;
 }
 
 .nav-level1-title {
@@ -91,7 +91,7 @@ nav a, nav span {
 }
 
 .nav-level1-page {
-	margin-left: 15px;
+	margin-left: 20px;
 }
 
 .nav-level2-category {
@@ -108,11 +108,17 @@ nav span, nav a {
 	color: var(--shade);
 }
 
+#nav-control-background {
+	position: fixed;
+	border-top : 75px solid var(--bkgShade);
+	border-right : 75px solid transparent;
+}
+
 #nav-control {
-	position: absolute;
+	position: fixed;
 	height: 18px;
 	width: 26px;
-	padding: 20px;
+	padding: 10px;
 }
 
 #nav-control div {
@@ -151,10 +157,12 @@ nav.nav-open ~ content {
 
 #credits {
 	text-align: center;
-	color: var(--bkgMain);
+	color: var(--shadeShaded);
 	width: 300px;
 	margin-top: 50px;
 	margin-bottom: 30px;
+	font-size: small;
+	font-weight: 700;
 }
 
 /* Responsive */
