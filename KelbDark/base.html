@@ -22,8 +22,8 @@
 
         {%- block scripts %}
             <script src="{{ base_url }}/assets/script.js"></script>
-            <link rel="stylesheet" href="/assets/hljs/atom-one-dark.css">
-            <script src="/assets/hljs/highlight.min.js"></script>
+            <link rel="stylesheet" href="{{ base_url }}/assets/hljs/atom-one-dark.css">
+            <script src="{{ base_url }}/assets/hljs/highlight.min.js"></script>
             <script>hljs.initHighlightingOnLoad();</script>
             {%- for path in extra_js %}
                 <script src="{{ path }}/assets/script.js"></script>
