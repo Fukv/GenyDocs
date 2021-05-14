@@ -4,7 +4,7 @@ How does Geny work
 	- Geny initialization
 Customization
 	- Packages
-	
+
 	- Theming
 	- Translation
 	- Deploying
@@ -12,3 +12,5 @@ API
 	- How does genyAPI work
 	-
 Style Guide
+	- Code Conventions
+	-
