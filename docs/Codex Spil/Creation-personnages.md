@@ -185,7 +185,7 @@ Elle est importante pour faire sorte d'implanter le joueur dans l'univers
 | Attribut    | Valeur                                                       |
 | ----------- | :----------------------------------------------------------- |
 | Nom         | Gane                                                         |
-| Description | Gane est rôdeur, il est fin et musclé, aux cheveux noir, yeux noirs, et bien sur vêtements noir, il a l'air d'être sorti de l'enfer, et pourtant, au coin du feu il se prêtera facilement et joyeusement a une bonne discussion |
+| Description | Gane est rôdeur, il est fin et musclé, aux cheveux noirs, yeux noirs, et bien sur vêtements noirs, il a l'air d'être sorti de l'enfer, et pourtant, au coin du feu il se prêtera facilement et joyeusement a une bonne discussion |
 | Spécialité  | Rôdeur                                                       |
 | PVs         | 10                                                           |
 
