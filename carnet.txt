@@ -3,8 +3,13 @@ How does Geny work
 	- A brief introduction to Packages
 	- Geny initialization
 Customization
+	- Commands
+		* Longhand
+		* Shorthand
 	- Packages
-
+		* Package.json
+		* Create your package
+		* Uploading your package
 	- Theming
 	- Translation
 	- Deploying
@@ -13,4 +18,4 @@ API
 	-
 Style Guide
 	- Code Conventions
-	-
+	- App Style
