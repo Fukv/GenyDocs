@@ -205,7 +205,7 @@ only screen and (                max-resolution: 2dppx)  and (max-width: 600px) 
 }
 
 .md-content h2, .md-content h3, .md-content h4, .md-content h5 {
-	margin-top: 30px;
+	margin-top: 40px;
 }
 
 .md-content h1 {
