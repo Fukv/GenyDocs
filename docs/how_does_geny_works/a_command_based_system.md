@@ -89,19 +89,34 @@ Example :
 "askSound"
 ```
 
-As you can see, even with low capability, you can already use it in a lot of context, you can use it with normal format, opcode:arg
+As you can see, even with low capability, you can already use it in a lot of context, you can use it with normal format, opcode:arg, with arg as a string or numeric value, or even no arguments
+
+The shorthand format is verified with this regex : `/^[A-z]+(:[A-z0-9]+)?$/`
 
 
 
-
+### Longhand Command
 
 ```json
-// in longhand
 {
-    "opcode": "openWin",
+    "opcode": "playSound",
     "args": {
-        "win": "about"
+        "channel": 0,
+        "path": "/assets/packages/core/soundBoard/sounds/joyful_tavern.mp3"
     }
 }
 ```
+
+```json
+{
+    "opcode": "showText",
+    "args": {
+        "text": "L´innocence n´existe pas, il n´y a que des degrés de culpabilité."
+    }
+}
+```
+
+There is only one top level key needed : it's `opcode`, `arg` can be omitted if command doesn't needs it
+
+This is, as shown, in a JSON format
 
