@@ -33,9 +33,10 @@ These two way of executing commands are complementary, one isn't better than the
 
 ### What's Inside
 
-A command needs an **`opcode`** and !!
+A command needs an **`opcode`**, for operation code, it tells what operation it is. It's a short string like `rollDice` or `toggleCmdPannel`
+And for some command (a majority) it contains `args`, another top-level key to specify some details about the operation it the `win` argument for `openWin`, or `result` for `rollDice`
 
-
+The arg key is up to the command, each commands have their own arg requirements
 
 ## For what usage
 
@@ -89,16 +90,20 @@ Example :
 "askSound"
 ```
 
-As you can see, even with low capability, you can already use it in a lot of context, you can use it with normal format, opcode:arg, with arg as a string or numeric value, or even no arguments
+As you can see, even with low capability, you can already use it in a lot of context, you can use it with normal format, `opcode:arg` where arg can be a string or numeric (still a string of course) or even no arguments
 
-The shorthand format is verified with this regex : `/^[A-z]+(:[A-z0-9]+)?$/`
+The regex used for validation is this one : `/^[A-z]+(:[A-z0-9]+)?$/`
 
 So :
  - Have to contain an opcode (only ascii letters)
  - Can contains a `:` but if so :
     - It needs to also contains an argument (any alphanumeric string)
 
-### Longhand Command
+### Longhand Format
+
+The longhand format is the other command format
+
+Example :
 
 ```json
 {
@@ -119,6 +124,6 @@ So :
 }
 ```
 
-There is only one top level key needed : it's `opcode`, `arg` can be omitted if command doesn't needs it
+There is only one top level key needed : it's `opcode` and `arg`, the last one can be omitted if command doesn't needs it
 
-This is, as shown, in a JSON format
+This is, as shown, in a JSON format for transfer, storage, and in a JS object when executed
